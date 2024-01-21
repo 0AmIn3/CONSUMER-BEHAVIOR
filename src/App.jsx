@@ -25,7 +25,6 @@ const App = () => {
   // },[])
   const handleKeyDown = (event) => {
     console.log(event.keyCode);
- 
   };
   useEffect(() => {
     const handleGlobalKeyDown = (event) => {
@@ -33,12 +32,12 @@ const App = () => {
       swiper.slideNext();
     };
 
-    window.addEventListener('keydown', handleGlobalKeyDown);
-   
+    window.addEventListener("keydown", handleGlobalKeyDown);
+
     return () => {
-      window.removeEventListener('keydown', handleGlobalKeyDown);
+      window.removeEventListener("keydown", handleGlobalKeyDown);
     };
-  }, [swiper]); 
+  }, [swiper]);
   return (
     <div className=" max-w-[1920px] mx-auto">
       <div className=" h-screen  mx-auto  max-h-[900px]">
@@ -66,10 +65,11 @@ const App = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center  justify-center">
-            <div className="w-[90%] h-[90%] sli  border-[4px] p-10 border-[#00E8DA] rounded-2xl  flex flex-col ">
+            <div className="w-[90%] h-[90%] sli  font-medium border-[4px]  p-10 border-[#00E8DA] rounded-2xl  flex flex-col  ">
               <h1 className="text-3xl text-[#32B7C7] font-extrabold">
                 1. Роль связей с общественностью:
               </h1>
+              <div className=" border-b-2 border-solid  mt-1 w-2/3  border-[#32B7C7]"></div>
               <div className="flex gap-5 mt-10 ">
                 <div className="w-1/2 rounded-2xl  overflow-hidden">
                   <img
@@ -79,7 +79,7 @@ const App = () => {
                   />
                 </div>
 
-                <p className="text-xl w-1/2">
+                <p className="text-xl  w-1/2">
                   Связи с общественностью (PR) представляют собой стратегический
                   инструмент, играющий неотъемлемую роль в современном бизнесе.{" "}
                   <br />
@@ -100,10 +100,11 @@ const App = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center  justify-center">
-            <div className="w-[90%] h-[90%] sli  border-[4px] p-10 border-[#00E8DA] rounded-2xl  flex flex-col ">
+            <div className="w-[90%] h-[90%] sli  font-medium  border-[4px] p-10 border-[#00E8DA] rounded-2xl  flex flex-col ">
               <h1 className="text-3xl text-[#32B7C7] font-extrabold">
                 2. Работа по связям с общественностью:
               </h1>
+              <div className=" border-b-2 border-solid  mt-1 w-2/3  border-[#32B7C7]"></div>
               <div className="flex gap-5 mt-10 ">
                 <p className="text-xl w-1/2">
                   Эффективная стратегия связей с общественностью включает в себя
@@ -138,10 +139,11 @@ const App = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center  justify-center">
-            <div className="w-[90%] h-[90%] sli  border-[4px] p-10 border-[#00E8DA] rounded-2xl  flex flex-col ">
+            <div className="w-[90%] h-[90%] sli font-medium  border-[4px] p-10 border-[#00E8DA] rounded-2xl  flex flex-col ">
               <h1 className="text-3xl text-[#32B7C7] font-extrabold">
                 3. Спонсорство и мероприятия:
               </h1>
+              <div className=" border-b-2 border-solid  mt-1 w-2/3  border-[#32B7C7]"></div>
               <div className="flex gap-5 mt-10 ">
                 <div className="w-1/2 rounded-2xl  overflow-hidden">
                   <img
@@ -166,10 +168,11 @@ const App = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center  justify-center">
-            <div className="w-[90%] h-[90%] sli  border-[4px] p-10 border-[#00E8DA] rounded-2xl  flex flex-col ">
+            <div className="w-[90%] h-[90%] sli font-medium  border-[4px] p-10 border-[#00E8DA] rounded-2xl  flex flex-col ">
               <h1 className="text-3xl text-[#32B7C7] font-extrabold">
                 4. Корпоративная реклама:
               </h1>
+              <div className=" border-b-2 border-solid  mt-1 w-2/3  border-[#32B7C7]"></div>
               <div className="flex gap-5 mt-10 ">
                 <p className="text-xl w-1/2">
                   Корпоративная реклама – это ключевой элемент построения образа
@@ -199,10 +202,11 @@ const App = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center  justify-center">
-            <div className="w-[90%] h-[90%] sli  border-[4px] p-10 border-[#00E8DA] rounded-2xl  flex flex-col ">
+            <div className="w-[90%] h-[90%] sli font-medium  border-[4px] p-10 border-[#00E8DA] rounded-2xl  flex flex-col ">
               <h1 className="text-3xl text-[#32B7C7] font-extrabold">
                 5. Инструменты связей с общественностью:
               </h1>
+              <div className=" border-b-2 border-solid  mt-1 w-2/3  border-[#32B7C7]"></div>
               <div className="flex gap-5 mt-10 ">
                 <p className="text-xl w-1/2 flex flex-col justify-between">
                   <p>
@@ -230,10 +234,11 @@ const App = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center  justify-center">
-            <div className="w-[90%] h-[90%] sli  border-[4px] p-10 border-[#00E8DA] rounded-2xl  flex flex-col ">
+            <div className="w-[90%] h-[90%] sli font-medium  border-[4px] p-10 border-[#00E8DA] rounded-2xl  flex flex-col ">
               <h1 className="text-3xl text-[#32B7C7] font-extrabold">
                 6. Тренды в связях с общественностью:
               </h1>
+              <div className=" border-b-2 border-solid  mt-1 w-2/3  border-[#32B7C7]"></div>
               <div className="flex gap-5 mt-10 ">
                 <div className="w-1/2 rounded-2xl  overflow-hidden">
                   <img
@@ -258,10 +263,11 @@ const App = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center  justify-center">
-            <div className="w-[90%] h-[90%] sli  border-[4px] p-10 border-[#00E8DA] rounded-2xl  flex flex-col ">
+            <div className="w-[90%] h-[90%] sli font-medium  border-[4px] p-10 border-[#00E8DA] rounded-2xl  flex flex-col ">
               <h1 className="text-3xl text-[#32B7C7] font-extrabold">
                 7. Связи с общественностью и спонсорские программы:
               </h1>
+              <div className=" border-b-2 border-solid  mt-1 w-2/3  border-[#32B7C7]"></div>
               <div className="flex gap-5 mt-10 ">
                 <p className="text-xl w-1/2">
                   Интеграция связей с общественностью и спонсорских программ
