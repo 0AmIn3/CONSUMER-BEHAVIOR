@@ -54,11 +54,14 @@ const App = () => {
           }}
         >
           <SwiperSlide className="  flex flex-col items-center   justify-center">
-            <div className="w-[90%] h-[90%] sli  border-[4px] border-[#00E8DA] rounded-2xl  flex flex-col items-center  justify-center">
+            <div className="w-[90%] relative h-[90%] sli  border-[4px] border-[#00E8DA] rounded-2xl  flex flex-col items-center  justify-center">
               <p className=" text-center text-3xl">Тема :</p>
               <p className=" text-center text-3xl font-semibold">
                 Связи с общественностью, <br /> спонсорство и корпоративная
                 реклама
+              </p>
+              <p className="text-[#32B7C7] absolute bottom-5 right-5">
+                IERP-514R / AXMEDJANOV A. I.{" "}
               </p>
             </div>
           </SwiperSlide>
@@ -285,7 +288,11 @@ const App = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="flex items-center  justify-center">
-            Slide 9
+            <div className="w-[90%] h-[90%] sli  border-[4px] p-10 border-[#00E8DA]  rounded-2xl   flex flex-col items-center justify-center">
+              <h1 className="text-5xl text-[#32B7C7] font-extrabold">
+                Спасибо за внимение!
+              </h1>
+            </div>
           </SwiperSlide>
         </Swiper>
       </div>
